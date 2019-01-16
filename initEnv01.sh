@@ -8,6 +8,8 @@ echo "set shiftwidth=4" >> ~/.vimrc
 
 echo "apt install"
 sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
     pciutils \
     wget \
     libatlas-base-dev \
