@@ -7,9 +7,8 @@ echo "set expandtab" >> ~/.vimrc
 echo "set shiftwidth=4" >> ~/.vimrc
 
 echo "apt install"
-sudo apt-get update
-sudo apt-get install -y --no-install-recommend \
-    spciutils \
+sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+    pciutils \
     wget \
     libatlas-base-dev \
     libboost-all-dev \
@@ -25,8 +24,8 @@ sudo apt-get install -y --no-install-recommend \
     python-pip python3-pip
 
 echo "adjust pip"
-sudo sh -c "echo 'export LC_ALL="C"' >> .bash_profile"
-source .bash_profile
+sudo sh -c "echo 'export LC_ALL="C"' >> ~/.bash_profile"
+source ~/.bash_profile
 pip install --upgrade pip
 pip3 install --upgrade pip
 echo ">modify: /usr/bin/pip"
