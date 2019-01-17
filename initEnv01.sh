@@ -6,25 +6,6 @@ echo "set autoindent" >> ~/.vimrc
 echo "set expandtab" >> ~/.vimrc
 echo "set shiftwidth=4" >> ~/.vimrc
 
-echo "apt install"
-sudo apt-get update && sudo apt-get install -y --no-install-recommends \
-    build-essential \
-    cmake \
-    pciutils \
-    wget \
-    libatlas-base-dev \
-    libboost-all-dev \
-    libgflags-dev \
-    libgoogle-glog-dev \
-    libhdf5-serial-dev \
-    libleveldb-dev \
-    liblmdb-dev \
-    libopencv-dev \
-    libprotobuf-dev \
-    libsnappy-dev \
-    protobuf-compiler \
-    python-pip python3-pip
-
 echo "adjust pip"
 sudo sh -c "echo 'export LC_ALL="C"' >> ~/.bash_profile"
 source ~/.bash_profile
