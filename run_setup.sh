@@ -11,4 +11,6 @@ adduser $username
 gpasswd -a $username sudo
 
 ## copy script for init env
-cp /root/init /home/$username/
+cp /root/.vimrc /home/$username/
+
+echo "ok"
