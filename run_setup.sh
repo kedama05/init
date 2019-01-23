@@ -3,7 +3,7 @@
 # RUN at first
 ## input name
 echo -n input new user name:
-read $username
+read username
 
 ## add usr
 echo "adduser"
@@ -13,4 +13,8 @@ gpasswd -a $username sudo
 ## copy script for init env
 cp /root/.vimrc /home/$username/
 
-echo "ok"
+## move $HOME
+sudo su $username
+cd
+
+echo "ok $username"
