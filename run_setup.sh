@@ -14,5 +14,4 @@ gpasswd -a $username sudo
 cp /root/.vimrc /home/$username/
 
 echo "add $username"
-echo "exit root"
-exit
+echo "finish setup."
