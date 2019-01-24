@@ -13,8 +13,6 @@ gpasswd -a $username sudo
 ## copy script for init env
 cp /root/.vimrc /home/$username/
 
-## move $HOME
-su $username
-cd $HOME
-
-echo "ok $username"
+echo "add $username"
+echo "exit root"
+exit
