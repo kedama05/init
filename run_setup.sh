@@ -14,7 +14,7 @@ gpasswd -a $username sudo
 cp /root/.vimrc /home/$username/
 
 ## move $HOME
-sudo su $username
-cd
+su $username
+cd $HOME
 
 echo "ok $username"
