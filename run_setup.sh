@@ -12,6 +12,7 @@ gpasswd -a $username sudo
 
 ## copy script for init env
 cp /root/.vimrc /home/$username/
+chown $username:$username /home/$username/.vimrc
 
 echo "add $username"
 echo "finish setup."
