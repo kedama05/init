@@ -1,4 +1,5 @@
 # init
+init Docker container
 ## files  
 run_setup.sh
 .vimrc  
